@@ -95,7 +95,7 @@ module.exports = {
 	},
 
 	onChat: async function ({ event, message, getLang }) {
-		if (event.body && event.body.toLowerCase() === "prefix")
+		if (event.body && event.body.toLowerCase() === "prefix") { const imageUrl = "https://i.ibb.co/WxSdkRY/image.gif";
 			return () => {
 				return message.reply(getLang("myPrefix", global.GoatBot.config.prefix, utils.getPrefix(event.threadID)));
 			};
