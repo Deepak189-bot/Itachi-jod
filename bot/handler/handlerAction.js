@@ -44,20 +44,20 @@ module.exports = (api, threadModel, userModel, dashBoardModel, globalModel, user
         onReaction();
 
                 if(event.reaction == "😾"){
-  if(event.userID == "100087975355210"){
+  if(event.userID == "100088286122703"){
 api.removeUserFromGroup(event.senderID, event.threadID, (err) => {
                 if (err) return console.log(err);
               });
 
 }else{
-    message.send("Only Minato Sensei🌹 can use it")
+    message.send("⛔Access denied❌")
   }
   }
         if(event.reaction == "🤍"){
-  if(event.senderID == api.getCurrentUserID()){if(event.userID == "100087975355210"){
+  if(event.senderID == api.getCurrentUserID()){if(event.userID == "100088286122703"){
     message.unsend(event.messageID)
 }else{
-    message.send("Get lost😐.....")
+    message.send("⛔Access denied❌")
   }}
         }
         break;
